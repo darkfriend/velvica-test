@@ -4,5 +4,5 @@ Please [check url](http://velvica.darkfriend.ru/)
 
 ## How to install
 
-* `git clone https://github.com/darkfriend/velvica-test.git && cd $_`
+* `git clone https://github.com/darkfriend/velvica-test.git && cd velvica-test`
 * `composer install`
