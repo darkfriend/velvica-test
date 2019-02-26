@@ -8,9 +8,6 @@
 
 namespace darkfriend;
 
-
-use mysql_xdevapi\Exception;
-
 class WordToWord
 {
 	private static $_instance;
@@ -37,14 +34,15 @@ class WordToWord
 	 * @param string $word1
 	 * @param string $word2
 	 * @return $this
+	 * @throws \Exception
 	 */
 	public function process($word1,$word2) {
 		if(!$word1 || !$word2)
-			throw new Exception('Words is not found!');
+			throw new \Exception('Words is not found!');
 		$arWord1 = preg_split('//u',$word1,-1, PREG_SPLIT_NO_EMPTY);
 		$arWord2 = preg_split('//u',$word2,-1, PREG_SPLIT_NO_EMPTY);
 		if(count($arWord1)!=count($arWord2))
-			throw new Exception('Words length is not correctly!');
+			throw new \Exception('Words length is not correctly!');
 
 		$arAlphabetKey = array_map(function($symbol,$symbol2){
 			return [
