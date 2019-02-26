@@ -1,0 +1,18 @@
+{
+    "name": "darkfriend/velvica-test",
+    "authors": [
+        {
+            "name": "darkfriend",
+            "email": "maslov.tlt@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "darkfriend\\" : "classes/"
+        }
+    }
+}
