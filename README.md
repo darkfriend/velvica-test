@@ -1,5 +1,6 @@
 # This is test task for Velvica
 
+Class for migration "лужа" to "море".\
 Please [check url](http://velvica.darkfriend.ru/)
 
 ## How to install
